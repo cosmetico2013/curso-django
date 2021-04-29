@@ -1,4 +1,4 @@
-#!/VMs/Sergiocoma/cosas/curso-django/venv/bin/python3
+#!/home/patata/Escritorio/curso-django/venv/bin/python3
 
 # -*- coding: utf-8 -*-
 import re

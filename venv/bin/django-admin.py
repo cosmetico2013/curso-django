@@ -1,4 +1,4 @@
-#!/VMs/Sergiocoma/cosas/curso-django/venv/bin/python3
+#!/home/patata/Escritorio/curso-django/venv/bin/python3
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 
