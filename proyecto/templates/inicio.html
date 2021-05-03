@@ -1,8 +1,11 @@
-{{ titulo }}
+{{ titulo }}<br/>
+{{ request.user }}
 <hr/>
 <br/>
 
+{% if form %}
 <form method="POST" action="">{% csrf_token %}
 {{ el_form.as_p }}
 <input type="submit" value="Registrama" />
 </form>
+{% endif %}
