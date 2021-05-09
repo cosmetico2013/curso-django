@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-import os 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,7 +24,7 @@ SECRET_KEY = 'django-insecure-&(59()=o_t+ur28fdf640j)8j=+ahpsk@4k1ij==leb+f7z!78
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+ 
 ALLOWED_HOSTS = []
 
 EMAIL_HOST = 'smtp.gmail.com'
@@ -127,16 +126,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_URL = '/media/'
-#/static/imagenes/imgl.jpg
-
-STATICFILE_DIR =[
-    BASE_DIR / "static_pro", "static"
-    # "/var/www/static"
+MEDIA_URL = '/media/'
+STATICFILES_DIRS = [
+    BASE_DIR / "static_pro" / "static",
+    #'/var/www/static/',
 ]
 
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_env", "static_root")
-MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_env", "media_root")
+STATIC_ROOT = BASE_DIR / ".." / "static_env" / "static_root"
+
+MEDIA_ROOT = BASE_DIR / ".." / "static_env" / "media_root"
 
 
 # Default primary key field type
