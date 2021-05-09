@@ -38,12 +38,16 @@ EMAIL_USE_TLS = True
 # Application definition
 
 INSTALLED_APPS = [
+    #apps de django
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #apps de terceros
+    'crispy_forms',
+    #mis apps
     'boletin',
 ]
 
@@ -56,6 +60,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 ROOT_URLCONF = 'proyecto.urls'
 
