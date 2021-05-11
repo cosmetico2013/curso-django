@@ -43,10 +43,12 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
+    'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     #apps de terceros
     'crispy_forms',
+    'registration',
     #mis apps
     'boletin',
 ]
@@ -142,6 +144,8 @@ STATIC_ROOT = BASE_DIR / ".." / "static_env" / "static_root"
 
 MEDIA_ROOT = BASE_DIR / ".." / "static_env" / "media_root"
 
+ACCOUNT_ACTIVATION_DAYS = 7
+REGISTRATION_AUTO_LOGIN = True
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
