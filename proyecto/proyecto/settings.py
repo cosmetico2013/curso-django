@@ -146,6 +146,7 @@ MEDIA_ROOT = BASE_DIR / ".." / "static_env" / "media_root"
 
 ACCOUNT_ACTIVATION_DAYS = 7
 REGISTRATION_AUTO_LOGIN = True
+SITE_ID = 1
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
