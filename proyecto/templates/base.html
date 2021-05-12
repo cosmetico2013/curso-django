@@ -13,17 +13,21 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbar-static/">
 
+    <style>
+      {% block style %}{% endblock %}
+      </style>
+
     {% include "head_css.html" %}
 
   </head>
   <body>
 
 {% include "navbar.html" %}
-<main class="container">
 {% block jumbotron %}
 
 
 {% endblock %}
+<main class="container">
 
 {% block content %}
 {% endblock %}

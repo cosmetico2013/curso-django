@@ -3,16 +3,29 @@
 
 {% block head_title %}Bienvidos |  {{ block.super }}{% endblock %}
 
+<style>
+{% block style %}
+.jumbotron{
+    background-color: #1b3375 !important;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin-bottom: 30px;
+    color: white !important;
+}
+{% endblock %}
+</style>
+
+
 {% block jumbotron %}
-<div class="row">
-    <div class="col-sm-6">
-        <div class="bg-light p-5 rounded">
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-sm-6">
             <h1>Probar Django 3.2</h1>
             <p class="lead">Un proyecyo para principiantes. El objetivo es construir una pagina web simple a la par que elegante en muy poco tiempo</p>
             <a class="btn btn-lg btn-primary" href="/docs/5.0/components/navbar/" role="button">Unete &raquo;</a>
         </div>
+        <div class="col-sm-6" style="background-color: black;height: 300px;"></div>
     </div>
-    <div class="col-sm-6" style="background-color: black;height: 300px;"></div>
 </div>
 {% endblock %}
 
