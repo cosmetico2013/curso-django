@@ -32,7 +32,7 @@ def inicio(request):
 				"titulo": "gracias %s" %(instance.email)
 			}
 	
-	if request.user.is_authenticated() and request.user.is_staff:
+	if request.user.is_authenticated and request.user.is_staff:
 		context = {
 			"queryset": ["abc", "123"],
 		}
